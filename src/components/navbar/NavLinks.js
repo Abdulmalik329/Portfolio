@@ -6,13 +6,47 @@ import {BsGithub} from "react-icons/bs"
 
 const NavLinks = ({handleNav}) => {
   return (
-    <ul className='nav-links'>
-        <li onClick={handleNav} ><Link  to="//twitter.com/_pappy_jay_" target='_blank' className='nav-link'><FaTwitter /></Link></li>
-        <li onClick={handleNav} ><Link  to="//www.linkedin.com/in/pappyjay" target='_blank' className='nav-link'><FaLinkedin /></Link></li>
-        <li onClick={handleNav} ><Link  to="//github.com/Pappyjay23" target='_blank' className='nav-link'><BsGithub /></Link></li>
-        <li onClick={handleNav} ><a  href="mailto:pjinadu02@gmail.com" target='_blank' className='nav-link' rel="noreferrer"><BiEnvelope /></a></li>
-  </ul>
-  )
+    <ul className="nav-links">
+      <li onClick={handleNav}>
+        <Link
+          to="//twitter.com/_pappy_jay_"
+          target="_blank"
+          className="nav-link"
+        >
+          <FaTwitter />
+        </Link>
+      </li>
+      <li onClick={handleNav}>
+        <a
+          href="https://www.linkedin.com/in/abdulmalik-gairatov-5746903a0/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="nav-link"
+        >
+          <FaLinkedin />
+        </a>
+      </li>
+      <li onClick={handleNav}>
+        <Link
+          to="//github.com/Abdulmalik329"
+          target="_blank"
+          className="nav-link"
+        >
+          <BsGithub />
+        </Link>
+      </li>
+      <li onClick={handleNav}>
+        <a
+          href="mailto:abdulmalikgairatov@gmail.com"
+          target="_blank"
+          className="nav-link"
+          rel="noreferrer"
+        >
+          <BiEnvelope />
+        </a>
+      </li>
+    </ul>
+  );
 };
 
 export default NavLinks;
