@@ -1,21 +1,25 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { FaLinkedin, FaTwitter} from "react-icons/fa"
-import {BiEnvelope} from "react-icons/bi"
-import {BsGithub} from "react-icons/bs"
+import React from "react";
+import { Link } from "react-router-dom";
+import { FaLinkedin, FaTelegram } from "react-icons/fa"; // FaTwitter o'rniga FaTelegram
+import { BiEnvelope } from "react-icons/bi";
+import { BsGithub } from "react-icons/bs";
 
-const NavLinks = ({handleNav}) => {
+const NavLinks = ({ handleNav }) => {
   return (
     <ul className="nav-links">
+      {/* Telegram */}
       <li onClick={handleNav}>
-        <Link
-          to="//twitter.com/_pappy_jay_"
+        <a
+          href="https://t.me/abdu11malik"
           target="_blank"
+          rel="noopener noreferrer"
           className="nav-link"
         >
-          <FaTwitter />
-        </Link>
+          <FaTelegram />
+        </a>
       </li>
+
+      {/* LinkedIn */}
       <li onClick={handleNav}>
         <a
           href="https://www.linkedin.com/in/abdulmalik-gairatov-5746903a0/"
@@ -26,15 +30,20 @@ const NavLinks = ({handleNav}) => {
           <FaLinkedin />
         </a>
       </li>
+
+      {/* GitHub */}
       <li onClick={handleNav}>
-        <Link
-          to="//github.com/Abdulmalik329"
+        <a
+          href="https://github.com/Abdulmalik329"
           target="_blank"
+          rel="noopener noreferrer"
           className="nav-link"
         >
           <BsGithub />
-        </Link>
+        </a>
       </li>
+
+      {/* Email */}
       <li onClick={handleNav}>
         <a
           href="mailto:abdulmalikgairatov@gmail.com"

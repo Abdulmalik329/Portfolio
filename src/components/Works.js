@@ -16,8 +16,7 @@ const Works = () => {
 
 	const tabData = [
 		{ id: "react", label: "React", data: ReactData },
-		{ id: "vue", label: "Vue", data: VueData },
-		{ id: "react-native", label: "React Native", data: ReactNativeData },
+		{ id: "Next", label: "Next", data: VueData },
 	];
 
 	return (
@@ -29,7 +28,7 @@ const Works = () => {
 					viewport={{ once: true }}
 					className='heading'>
 					<p className='heading-sub-text'>I build real value</p>
-					<p className='heading-text'>Works</p>
+					<p className='heading-text'>Projects</p>
 				</motion.div>
 
 				<div className='tabs'>

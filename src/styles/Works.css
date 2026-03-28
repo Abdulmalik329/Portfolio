@@ -1,187 +1,227 @@
 .works-box {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Biroz kattalashtirildi */
 }
 
 .work-link-group {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .works-container {
-	width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Karta ichini to'ldirib turishi uchun */
 }
 
 .works-card {
-	background-color: var(--card-blue-shade);
-	color: var(--nav-grey);
-	border-radius: 5px;
-	position: relative;
-	padding: 1rem 2rem;
-	width: 300px;
-	max-width: 300px;
-	margin: 0 auto;
-	height: 250px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	cursor: pointer;
-	transition: all 0.3s ease;
+  background-color: var(--card-blue-shade);
+  color: var(--nav-grey);
+  border-radius: 5px;
+  position: relative;
+  padding: 1.5rem; /* Padding biroz ixchamlashtirildi */
+  width: 320px; /* Kenglik biroz oshirildi loginlar sig'ishi uchun */
+  max-width: 100%;
+  margin: 0 auto;
+  
+  /* O'ZGARTIRILDI: height: 250px o'rniga min-height ishlatamiz */
+  height: auto; 
+  min-height: 280px; /* Minimal balandlik */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid transparent; /* Hoverda chiroyli ko'rinish uchun */
 }
 
 .works-card:hover {
-	transform: translateY(-7px);
+  transform: translateY(-7px);
+  border-color: var(--nav-blue); /* Hoverda ramka rangi */
 }
 
 .works-card:hover .work-title {
-	color: var(--nav-blue);
+  color: var(--nav-blue);
 }
 
 .top-work {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem; /* Masofa biroz kamaytirildi */
+  width: 100%;
 }
 
 .top-work .right {
-	display: flex;
+  display: flex;
 }
 
 .mid-work {
-	margin-bottom: 2rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* O'rtadagi qism joyni to'ldirib turadi */
+  width: 100%;
 }
 
 .work-title {
-	font-size: 1.3rem;
-	font-weight: 700;
-	word-spacing: 5px;
-	margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  word-spacing: 5px;
+  margin-bottom: 0.5rem;
 }
 
 .work-desc {
-	font-size: 70%;
+  font-size: 0.8rem; /* Foiz o'rniga rem ishlatildi aniqlik uchun */
+  line-height: 1.4;
 }
 
+/* --- YANGI QO'SHILGAN: Credentials (Login/Pass) Style --- */
+.work-credentials {
+  margin-top: 15px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2); /* Fonga biroz to'qlik beramiz */
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  width: 100%;
+  text-align: left;
+}
+
+.credentials-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--nav-blue); /* Sarlavha ko'k rangda */
+  margin-bottom: 5px;
+}
+
+.credentials-text {
+  font-size: 0.7rem; /* Kichikroq shrift */
+  color: var(--nav-grey);
+  white-space: pre-wrap; /* Matn sig'masa pastga tushadi */
+  line-height: 1.5;
+  font-family: monospace; /* Kodga o'xshash shrift */
+}
+/* -------------------------------------------------------- */
+
 .work-folder {
-	font-size: 2rem;
-	color: var(--nav-blue);
+  font-size: 2rem;
+  color: var(--nav-blue);
 }
 
 .work-git,
 .work-link {
-	color: var(--nav-grey);
-	margin: 0 0.5rem;
-	font-size: 1.5rem;
-	display: flex;
-	align-items: center;
-	transition: all 0.3s ease;
+  color: var(--nav-grey);
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
 }
+
 .work-git:hover,
 .work-link:hover {
-	color: var(--nav-blue);
+  color: var(--nav-blue);
 }
 
 .bottom-work {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 5px;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto; /* Eng pastda turishini ta'minlaydi */
 }
 
 .bottom-work small {
-	margin: 0 0.5rem;
-	font-size: 60%;
+  margin: 0;
+  font-size: 0.7rem;
+  background: rgba(255,255,255,0.05); /* Texnologiyalar orqasiga fon */
+  padding: 3px 8px;
+  border-radius: 10px;
 }
 
-/* New styles for tabs */
+/* Tabs styles (o'zgarishsiz qoldirildi, agar kelajakda kerak bo'lsa) */
 .tabs {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 2rem;
-  }
-  
-  .tab {
-	padding: 0.5rem 1rem;
-	margin: 0 0.5rem;
-	background-color: var(--card-blue-shade);
-	color: var(--nav-grey);
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	font-size: 1rem;
-	outline: none;
-  }
-  
-  .tab:hover {
-	background-color: var(--nav-blue);
-	color: white;
-  }
-  
-  .tab.active {
-	background-color: var(--nav-blue);
-	color: white;
-  }
-  
-  /* Media Queries */
-  @media screen and (max-width: 750px) {
-	.tabs {
-	  flex-wrap: wrap;
-	}
-  
-	.tab {
-	  margin: 0.5rem;
-	}
-  }
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  background-color: var(--card-blue-shade);
+  color: var(--nav-grey);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  outline: none;
+}
+
+.tab:hover {
+  background-color: var(--nav-blue);
+  color: white;
+}
+
+.tab.active {
+  background-color: var(--nav-blue);
+  color: white;
+}
 
 /* Media Queries */
 @media screen and (max-width: 750px) {
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    margin: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
-	.work-desc {
-		font-size: 60%;
-	}
+  .works-card {
+      width: 100%; /* Mobilda to'liq ekran */
+  }
 
-	.work-folder {
-		font-size: 1.5rem;
-	}
+  .work-desc {
+    font-size: 0.75rem;
+  }
 
-	.work-git,
-	.work-link {
-		font-size: 1.2rem;
-	}
+  .work-folder {
+    font-size: 1.5rem;
+  }
 
-	.work-title {
-		font-size: 1.2rem;
-	}
+  .work-git,
+  .work-link {
+    font-size: 1.2rem;
+  }
 
-	.bottom-work small {
-		font-size: 50%;
-	}
+  .work-title {
+    font-size: 1.2rem;
+  }
+
+  .bottom-work small {
+    font-size: 0.6rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
-	.works-card {
-		width: 250px;
-		max-width: 300px;
-		margin: 0 auto;
-		height: 250px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		cursor: pointer;
-		transition: all 0.3s ease;
-	}
+  .works-card {
+    width: 100%;
+    height: auto;
+  }
 }

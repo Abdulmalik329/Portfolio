@@ -1,0 +1,57 @@
+.loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #020c1b; /* Saytingizning to'q foni */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.loader-svg {
+    width: 120px;
+    height: 120px;
+    /* O'ZGARTIRILDI: Aniq ko'k rang o'zgaruvchisi qo'yildi */
+    color: var(--nav-blue); 
+    margin-bottom: 20px;
+}
+
+/* Olti burchak chizig'i */
+.hexagon {
+    /* O'ZGARTIRILDI: Yashil (#64ffda) o'rniga ko'k rang qo'yildi */
+    stroke: var(--nav-blue);
+    /* Soyasini ham ko'k rangga mosladik */
+    filter: drop-shadow(0 0 5px rgba(0, 194, 255, 0.4));
+}
+
+/* "A" harfi chizig'i */
+.letter {
+    stroke: #e6f1ff; /* Biroz oqishroq rang, ajralib turishi uchun */
+    stroke-width: 4px;
+}
+
+.loader-text {
+    font-family: "Poppins", sans-serif;
+    color: #8892b0;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Mobil qurilmalar uchun */
+@media screen and (max-width: 768px) {
+    .loader-svg {
+        width: 100px;
+        height: 100px;
+    }
+    .loader-text {
+        font-size: 1rem;
+    }
+}

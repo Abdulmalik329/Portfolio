@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import { BiBookContent, BiEnvelope } from "react-icons/bi";
+import { BiBookContent } from "react-icons/bi";
 import { FaHome, FaLaptop } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
 import { Link } from "react-scroll";
@@ -121,20 +121,7 @@ const Navbar = ({ nav, handleNav }) => {
 							className='mid-links'>
 							<BiBookContent className='mid-icon' />
 							<li className='mid-link' onClick={handleNav}>
-								Works
-							</li>
-						</Link>
-						<Link
-							activeClass='active'
-							spy={true}
-							smooth={true}
-							offset={0}
-							duration={500}
-							to='contact'
-							className='mid-links'>
-							<BiEnvelope className='mid-icon' />
-							<li className='mid-link' onClick={handleNav}>
-								Contact
+								Projects
 							</li>
 						</Link>
 					</ul>
