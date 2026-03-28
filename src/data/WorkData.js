@@ -12,7 +12,7 @@ export const ReactData = [
       "JWT Auth",
     ],
     gitlink: "https://github.com/Abdulmalik329/Gym",
-    site: "https://nt-gym.it-mahalla.uz/login",
+    site: "",
   },
 
   // 2-Karta: Login va Parollar (Yangi qo'shildi)
@@ -26,7 +26,7 @@ User: member@gmail.com | member123`,
     tech: ["Role: Super Admin", "Role: Manager", "Role: User"],
     // Linklar o'sha loyihaga olib boradi
     gitlink: "https://github.com/Abdulmalik329/Gym",
-    site: "https://nt-gym.it-mahalla.uz/login",
+    site: "",
   },
 
   // 3-Karta: Boshqa loyihangiz
@@ -36,6 +36,36 @@ User: member@gmail.com | member123`,
     tech: ["React.js", "Tailwind CSS", "Vite", "Framer Motion"],
     gitlink: "https://github.com/Abdulmalik329/Nornlight",
     site: "https://front-project-eight.vercel.app",
+  },
+  {
+    title: "Task Planner (Life OS)",
+    desc: "A personal startup project designed as an all-in-one productivity ecosystem. Features a GitHub-style activity heatmap, habit tracking, and complex data visualization for personal workflow optimization.",
+    tech: [
+      "Next.js",
+      "React",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+    gitlink: "", // GitHub manzilingizni tekshirib ko'ring
+    site: "https://task-planner-kohl.vercel.app",
+  },
+
+  // 5-Karta: Edu-Flow (LMS)
+  {
+    title: "Edu-Flow: LMS CRM",
+    desc: "A multi-tenant Language Learning Management System (LMS). Built with a focus on scalable database architecture, Role-Based Access Control (RBAC), and automated student reporting for education centers.",
+    tech: [
+      "React.js",
+      "Node.js",
+      "Prisma",
+      "PostgreSQL",
+      "Express",
+      "Tailwind CSS",
+    ],
+    gitlink: "https://github.com/Abdulmalik329/Edu-Flow_viewer", // GitHub manzilingizni tekshirib ko'ring
+    site: "https://edu-flow-viewer.vercel.app",
   },
 ];
 

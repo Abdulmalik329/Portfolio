@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Works.css";
 import { motion } from "framer-motion";
-import { ReactData,  VueData } from "../data/WorkData";
+import { ReactData } from "../data/WorkData";
 import WorkCard from "./WorkCard";
 
 const Works = () => {
@@ -16,7 +16,6 @@ const Works = () => {
 
 	const tabData = [
 		{ id: "react", label: "React", data: ReactData },
-		{ id: "Next", label: "Next", data: VueData },
 	];
 
 	return (
