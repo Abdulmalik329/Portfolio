@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Works.css";
 import { motion } from "framer-motion";
-import { ReactData, ReactNativeData, VueData } from "../data/WorkData";
+import { ReactData,  VueData } from "../data/WorkData";
 import WorkCard from "./WorkCard";
 
 const Works = () => {

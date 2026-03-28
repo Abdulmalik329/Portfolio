@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FaLinkedin, FaTelegram } from "react-icons/fa"; // FaTwitter o'rniga FaTelegram
 import { BiEnvelope } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
