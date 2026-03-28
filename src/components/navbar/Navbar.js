@@ -3,7 +3,7 @@ import { BiBookContent } from "react-icons/bi";
 import { FaHome, FaLaptop } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
 import { Link } from "react-scroll";
-import ProfileImg from "../../images/profile_me.jpg";
+import ProfileImg from "../../images/profile_me.png";
 import "../../styles/Navbar.css";
 import NavLinks from "./NavLinks";
 
