@@ -1,7 +1,7 @@
 import { DiJavascript1 } from "react-icons/di";
 import { FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
 import {
-  SiNextdotjs,
+
   SiTailwindcss,
   SiStyledcomponents,
   SiNodedotjs,
