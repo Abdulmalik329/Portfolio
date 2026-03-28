@@ -17,7 +17,6 @@ export const SkillsData = [
   { name: "Javascript", icon: <DiJavascript1 /> },
   { name: "TypeScript", icon: <SiTypescript /> }, // Next.js bilan ishlatganingiz uchun qoldirdim
   { name: "React Js", icon: <FaReact /> },
-  { name: "Next Js", icon: <SiNextdotjs /> },
 
   // Styling
   { name: "Tailwind CSS", icon: <SiTailwindcss /> },

@@ -39,5 +39,3 @@ User: member@gmail.com | member123`,
   },
 ];
 
-export const VueData = [];
-export const ReactNativeData = [];
